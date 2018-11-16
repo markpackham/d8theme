@@ -1,0 +1,8 @@
+<?php
+
+/*
+ * Implementing hook_preprocess_html()
+ */
+function webshop_preprocess_html( &$variables ) {
+	//kint( $variables );
+}

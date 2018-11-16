@@ -2,7 +2,6 @@ name: Webshop Theme
 description: Learning about theming
 type: theme
 core: 8.x
-base theme: stable
 
 libraries:
-  - webshop/webshop-style
+- webshop/webshop-style
