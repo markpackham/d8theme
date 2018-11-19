@@ -32,15 +32,17 @@
  */
 #}
 {% set heading_id = attributes.id ~ '-menu'|clean_id %}
-  {# Label. If not displayed, we still provide it for screen readers. #}
-  {% if not configuration.label_display %}
-      {% set title_attributes = title_attributes.addClass('visually-hidden') %}
-  {% endif %}
+<div class="col l3 s12">
+    <h5 class="white-text">Connect</h5>
+    {# Label. If not displayed, we still provide it for screen readers. #}
+    {% if not configuration.label_display %}
+        {% set title_attributes = title_attributes.addClass('visually-hidden') %}
+    {% endif %}
 
-{{ title_suffix }}
+    {{ title_suffix }}
 
-  {# Menu. #}
-  {% block content %}
-      {{ content }}
-  {% endblock %}
-
+    {# Menu. #}
+    {% block content %}
+        {{ content }}
+    {% endblock %}
+</div>
